@@ -17,7 +17,7 @@ void main() async {
     ],
     observers: [AsyncErrorLogger()],
   );
-  await dotenv.load(fileName: "assets/.env");
+  await dotenv.load(fileName: 'assets/.env');
   // FlutterError.demangleStackTrace = (StackTrace stack) {
   //   if (stack is stack_trace.Trace) return stack.vmTrace;
   //   if (stack is stack_trace.Chain) return stack.toTrace().vmTrace;

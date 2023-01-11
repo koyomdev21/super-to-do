@@ -7,6 +7,7 @@ import 'package:super_to_do/src/resources_manager/local_data/local_data_reposito
 
 import '../features/authentication/presentation/email_password_sign_in_screen.dart';
 import '../features/home/presentation/home_screen.dart';
+import '../features/location/presentation/map_screen.dart';
 import '../resources_manager/local_data/app_preferences.dart';
 import 'go_router_refresh_stream.dart';
 import 'not_found_screen.dart';
@@ -17,6 +18,7 @@ enum AppRoute {
   home,
   signIn,
   test,
+  mapbox,
 }
 
 final goRouterProvider = Provider<GoRouter>((ref) {
@@ -58,6 +60,15 @@ final goRouterProvider = Provider<GoRouter>((ref) {
           child: const EmailPasswordSignInScreen(
             formType: EmailPasswordSignInFormType.signIn,
           ),
+        ),
+      ),
+      GoRoute(
+        path: '/mapbox',
+        name: AppRoute.mapbox.name,
+        pageBuilder: (context, state) => MaterialPage(
+          key: state.pageKey,
+          fullscreenDialog: true,
+          child: MapScreen(),
         ),
       ),
       GoRoute(

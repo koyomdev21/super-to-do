@@ -24,7 +24,7 @@ class HomeScreen extends ConsumerWidget {
         title: const Text('Super To Do'),
         actions: [
           IconButton(
-              onPressed: () => context.goNamed(AppRoute.test.name),
+              onPressed: () => context.goNamed(AppRoute.mapbox.name),
               icon: const Icon(Icons.add)),
           IconButton(
               onPressed: () => ref.read(authRepositoryProvider).logout(),
