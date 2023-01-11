@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:super_to_do/src/app.dart';
 import 'package:super_to_do/src/exceptions/async_error_logger.dart';
@@ -16,6 +17,7 @@ void main() async {
     ],
     observers: [AsyncErrorLogger()],
   );
+  await dotenv.load(fileName: "assets/.env");
   // FlutterError.demangleStackTrace = (StackTrace stack) {
   //   if (stack is stack_trace.Trace) return stack.vmTrace;
   //   if (stack is stack_trace.Chain) return stack.toTrace().vmTrace;

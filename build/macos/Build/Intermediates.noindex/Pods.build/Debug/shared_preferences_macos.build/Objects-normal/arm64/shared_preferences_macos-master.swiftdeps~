@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "cf8b443fa87b60403ef777c5fd105b872b335b3bc255b5817d15dee1d519a265"
+build_start_time: [1672560734, 877990961]
+build_end_time: [1672560734, 901681900]
+inputs:
+  ? "/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-2.0.4/macos/Classes/SharedPreferencesPlugin.swift"
+  : !private [1667968243, 393315315]

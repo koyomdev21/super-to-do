@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Maps flutter</string>
+    <string name="mapbox_access_token" translatable="false">sk.eyJ1Ijoia295b20iLCJhIjoiY2xjcjdyd2xoMGE0dzNwcDBwMXkxazh4MSJ9.h4m2UpTJ7fthyHv8z3l_sg</string>
+</resources>

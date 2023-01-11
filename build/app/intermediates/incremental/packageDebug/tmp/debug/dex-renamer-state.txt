@@ -1,0 +1,4 @@
+#Tue Jan 10 22:54:11 MYT 2023
+base.0=/Users/qayyumcheri/Dev/portfolio/super_to_do/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
