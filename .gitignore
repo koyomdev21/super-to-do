@@ -28,10 +28,10 @@ migrate_working_dir/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
-/assets/.env
 .pub-cache/
+/assets/.env
 .pub/
-/build//app/src/main/res/values/strings.xml
+/build/
 
 # Symbolication related
 app.*.symbols
