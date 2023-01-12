@@ -1,17 +1,23 @@
 # super_to_do
 
-A new Flutter project.
+TDD with repository pattern architecture.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is mainly focusing on the implementation of riverpod state management package with the most basic UI. Thus, the API used is just a stubbed with MockLab. Register features is not implemented. To login, always use 'abc@gmail.com' as email, 'password' as password as they are stubbed API. There will be major UI update with animation in the near future.
 
-A few resources to get you started if this is your first Flutter project:
+Packages used in this project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+flutter riverpod: to handle the state of the apps and caching strategy.
+go router: to handle the navigation.
+retrofit and dio: to handle the entire REST api calling.
+mocktail: mocking and testing.
+mapbox: implementing map for the application.
+sembast: for data persistence.
+For the meantime, apps crash happened for android when closing map as per flutter/flutter#106464. IOS working as intended.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# super-to-do
+Changes to be implement in the near future:
+
+real working use cases backend
+UI update
+application with real features
