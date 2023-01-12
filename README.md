@@ -4,7 +4,7 @@ TDD and clean architecture with repository pattern.
 
 ## Getting Started
 
-This project is mainly focusing on the implementation of riverpod state management package with the most basic UI. There will be UI update with animation in the near future. 
+This project is mainly focusing on the implementation of riverpod state management package with the most basic UI. Thus, the API used is just a stubbed from MockLab. Register features is not implemented. To login, always use 'abc@gmail.com' as email, 'password' as password as they are stubbed API. There will be major UI update with animation in the near future. 
 
 Packages used in this project:
   - flutter riverpod: to handle the state of the apps and caching strategy.
@@ -14,12 +14,7 @@ Packages used in this project:
   - mapbox: implementing map for the application.
   - sembast: for data persistence.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# super-to-do
+Changes to be implement in the near future:
+  - real working use cases backend
+  - UI update
+  - application with real features
