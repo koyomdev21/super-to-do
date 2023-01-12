@@ -1,0 +1,31 @@
+/Users/qayyumcheri/Dev/portfolio/super_to_do/android/app/src/main/res/drawable-v21: Warning: This folder configuration (v21) is unnecessary; minSdkVersion is 21. Merge all the resources in this folder into drawable. [ObsoleteSdkInt]
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/Users/qayyumcheri/Dev/portfolio/super_to_do/android/app/src/main/res/values/strings.xml:3: Warning: The resource R.string.app_name appears to be unused [UnusedResources]
+    <string name="app_name">Maps flutter</string>
+            ~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/portfolio/super_to_do/android/app/src/main/res/values/strings.xml:4: Warning: The resource R.string.mapbox_access_token appears to be unused [UnusedResources]
+    <string name="mapbox_access_token" translatable="false">sk.eyJ1Ijoia295b20iLCJhIjoiY2xjcjdyd2xoMGE0dzNwcDBwMXkxazh4MSJ9.h4m2UpTJ7fthyHv8z3l_sg</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests=true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests=true.
+
+0 errors, 3 warnings

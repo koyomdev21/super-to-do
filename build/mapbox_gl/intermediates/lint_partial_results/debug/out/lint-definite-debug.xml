@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.2" type="incidents">
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(e, e.getMessage())"
+                oldString="Log.e(TAG, e.getMessage(), e)"
+                replacement="Timber.tag(TAG).e(e, e.getMessage())"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(e, e.getMessage())"
+                oldString="Log.e(TAG, e.getMessage(), e)"
+                replacement="Timber.e(e, e.getMessage())"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/GlobalMethodHandler.java"
+            line="60"
+            column="9"
+            startOffset="2215"
+            endLine="60"
+            endColumn="38"
+            endOffset="2244"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(e, e.getMessage())"
+                oldString="Log.e(TAG, e.getMessage(), e)"
+                replacement="Timber.tag(TAG).e(e, e.getMessage())"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(e, e.getMessage())"
+                oldString="Log.e(TAG, e.getMessage(), e)"
+                replacement="Timber.e(e, e.getMessage())"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/GlobalMethodHandler.java"
+            line="65"
+            column="9"
+            startOffset="2326"
+            endLine="65"
+            endColumn="38"
+            endOffset="2355"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="`onTouch` should call `View#performClick` when a click is detected">
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/MapboxMapController.java"
+            line="220"
+            column="28"
+            startOffset="8343"
+            endLine="220"
+            endColumn="35"
+            endOffset="8350"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="Custom view ``MapView`` has `setOnTouchListener` called on it but does not override `performClick`">
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/MapboxMapController.java"
+            line="217"
+            column="7"
+            startOffset="8227"
+            endLine="225"
+            endColumn="13"
+            endOffset="8510"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(&quot;setStyleString - string empty or null&quot;)"
+                oldString="Log.e(TAG, &quot;setStyleString - string empty or null&quot;)"
+                replacement="Timber.tag(TAG).e(&quot;setStyleString - string empty or null&quot;)"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(&quot;setStyleString - string empty or null&quot;)"
+                oldString="Log.e(TAG, &quot;setStyleString - string empty or null&quot;)"
+                replacement="Timber.e(&quot;setStyleString - string empty or null&quot;)"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/MapboxMapController.java"
+            line="249"
+            column="7"
+            startOffset="9218"
+            endLine="249"
+            endColumn="58"
+            endOffset="9269"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(&quot;missing location permissions&quot;)"
+                oldString="Log.e(TAG, &quot;missing location permissions&quot;)"
+                replacement="Timber.tag(TAG).e(&quot;missing location permissions&quot;)"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(&quot;missing location permissions&quot;)"
+                oldString="Log.e(TAG, &quot;missing location permissions&quot;)"
+                replacement="Timber.e(&quot;missing location permissions&quot;)"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/MapboxMapController.java"
+            line="282"
+            column="7"
+            startOffset="10953"
+            endLine="282"
+            endColumn="49"
+            endOffset="10995"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).d(exception.toString())"
+                oldString="Log.d(TAG, exception.toString())"
+                replacement="Timber.tag(TAG).d(exception.toString())"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.d(exception.toString())"
+                oldString="Log.d(TAG, exception.toString())"
+                replacement="Timber.d(exception.toString())"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/MapboxMapController.java"
+            line="624"
+            column="13"
+            startOffset="21264"
+            endLine="624"
+            endColumn="45"
+            endOffset="21296"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).d(exception.toString())"
+                oldString="Log.d(TAG, exception.toString())"
+                replacement="Timber.tag(TAG).d(exception.toString())"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.d(exception.toString())"
+                oldString="Log.d(TAG, exception.toString())"
+                replacement="Timber.d(exception.toString())"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/MapboxMapController.java"
+            line="653"
+            column="13"
+            startOffset="22370"
+            endLine="653"
+            endColumn="45"
+            endOffset="22402"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(&quot;location component: getLastLocation&quot;)"
+                oldString="Log.e(TAG, &quot;location component: getLastLocation&quot;)"
+                replacement="Timber.tag(TAG).e(&quot;location component: getLastLocation&quot;)"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(&quot;location component: getLastLocation&quot;)"
+                oldString="Log.e(TAG, &quot;location component: getLastLocation&quot;)"
+                replacement="Timber.e(&quot;location component: getLastLocation&quot;)"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/MapboxMapController.java"
+            line="1003"
+            column="11"
+            startOffset="35780"
+            endLine="1003"
+            endColumn="60"
+            endOffset="35829"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(&quot;Failed to find an Access Token in the Application meta-data. Maps may not load&quot;..."
+                oldString="Log.e(&#xA;          TAG,&#xA;          &quot;Failed to find an Access Token in the Application meta-data. Maps may not load&quot;&#xA;              + &quot; correctly. Please refer to the installation guide at&quot;&#xA;              + &quot; https://github.com/tobrun/flutter-mapbox-gl#mapbox-access-token for&quot;&#xA;              + &quot; troubleshooting advice.&quot;&#xA;              + e.getMessage())"
+                replacement="Timber.tag(TAG).e(&quot;Failed to find an Access Token in the Application meta-data. Maps may not load&quot;&#xA;              + &quot; correctly. Please refer to the installation guide at&quot;&#xA;              + &quot; https://github.com/tobrun/flutter-mapbox-gl#mapbox-access-token for&quot;&#xA;              + &quot; troubleshooting advice.&quot;&#xA;              + e.getMessage())"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(&quot;Failed to find an Access Token in the Application meta-data. Maps may not load&quot;..."
+                oldString="Log.e(&#xA;          TAG,&#xA;          &quot;Failed to find an Access Token in the Application meta-data. Maps may not load&quot;&#xA;              + &quot; correctly. Please refer to the installation guide at&quot;&#xA;              + &quot; https://github.com/tobrun/flutter-mapbox-gl#mapbox-access-token for&quot;&#xA;              + &quot; troubleshooting advice.&quot;&#xA;              + e.getMessage())"
+                replacement="Timber.e(&quot;Failed to find an Access Token in the Application meta-data. Maps may not load&quot;&#xA;              + &quot; correctly. Please refer to the installation guide at&quot;&#xA;              + &quot; https://github.com/tobrun/flutter-mapbox-gl#mapbox-access-token for&quot;&#xA;              + &quot; troubleshooting advice.&quot;&#xA;              + e.getMessage())"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/MapBoxUtils.java"
+            line="31"
+            column="7"
+            startOffset="1023"
+            endLine="37"
+            endColumn="32"
+            endOffset="1369"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).i(&quot;Region &quot; + &quot;downloaded &quot; + &quot;successfully.&quot;)"
+                oldString="Log.i(TAG, &quot;Region &quot; + &quot;downloaded &quot; + &quot;successfully.&quot;)"
+                replacement="Timber.tag(TAG).i(&quot;Region &quot; + &quot;downloaded &quot; + &quot;successfully.&quot;)"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.i(&quot;Region &quot; + &quot;downloaded &quot; + &quot;successfully.&quot;)"
+                oldString="Log.i(TAG, &quot;Region &quot; + &quot;downloaded &quot; + &quot;successfully.&quot;)"
+                replacement="Timber.i(&quot;Region &quot; + &quot;downloaded &quot; + &quot;successfully.&quot;)"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/OfflineManagerUtils.java"
+            line="96"
+            column="27"
+            startOffset="4038"
+            endLine="96"
+            endColumn="82"
+            endOffset="4093"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).i(&quot;Region &quot; + &quot;download &quot; + &quot;progress = &quot; + progress)"
+                oldString="Log.i(TAG, &quot;Region &quot; + &quot;download &quot; + &quot;progress = &quot; + progress)"
+                replacement="Timber.tag(TAG).i(&quot;Region &quot; + &quot;download &quot; + &quot;progress = &quot; + progress)"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.i(&quot;Region &quot; + &quot;download &quot; + &quot;progress = &quot; + progress)"
+                oldString="Log.i(TAG, &quot;Region &quot; + &quot;download &quot; + &quot;progress = &quot; + progress)"
+                replacement="Timber.i(&quot;Region &quot; + &quot;download &quot; + &quot;progress = &quot; + progress)"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/OfflineManagerUtils.java"
+            line="109"
+            column="27"
+            startOffset="4730"
+            endLine="109"
+            endColumn="89"
+            endOffset="4792"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(&quot;onError reason: &quot; + error.getReason())"
+                oldString="Log.e(TAG, &quot;onError reason: &quot; + error.getReason())"
+                replacement="Timber.tag(TAG).e(&quot;onError reason: &quot; + error.getReason())"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(&quot;onError reason: &quot; + error.getReason())"
+                oldString="Log.e(TAG, &quot;onError reason: &quot; + error.getReason())"
+                replacement="Timber.e(&quot;onError reason: &quot; + error.getReason())"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/OfflineManagerUtils.java"
+            line="116"
+            column="25"
+            startOffset="5034"
+            endLine="116"
+            endColumn="75"
+            endOffset="5084"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(&quot;onError message: &quot; + error.getMessage())"
+                oldString="Log.e(TAG, &quot;onError message: &quot; + error.getMessage())"
+                replacement="Timber.tag(TAG).e(&quot;onError message: &quot; + error.getMessage())"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(&quot;onError message: &quot; + error.getMessage())"
+                oldString="Log.e(TAG, &quot;onError message: &quot; + error.getMessage())"
+                replacement="Timber.e(&quot;onError message: &quot; + error.getMessage())"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/OfflineManagerUtils.java"
+            line="117"
+            column="25"
+            startOffset="5110"
+            endLine="117"
+            endColumn="77"
+            endOffset="5162"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(&quot;Mapbox tile count&quot; + &quot; limit exceeded: &quot; + limit)"
+                oldString="Log.e(TAG, &quot;Mapbox tile count&quot; + &quot; limit exceeded: &quot; + limit)"
+                replacement="Timber.tag(TAG).e(&quot;Mapbox tile count&quot; + &quot; limit exceeded: &quot; + limit)"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(&quot;Mapbox tile count&quot; + &quot; limit exceeded: &quot; + limit)"
+                oldString="Log.e(TAG, &quot;Mapbox tile count&quot; + &quot; limit exceeded: &quot; + limit)"
+                replacement="Timber.e(&quot;Mapbox tile count&quot; + &quot; limit exceeded: &quot; + limit)"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/OfflineManagerUtils.java"
+            line="127"
+            column="25"
+            startOffset="5643"
+            endLine="127"
+            endColumn="86"
+            endOffset="5704"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).e(&quot;Error: &quot; + error)"
+                oldString="Log.e(TAG, &quot;Error: &quot; + error)"
+                replacement="Timber.tag(TAG).e(&quot;Error: &quot; + error)"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.e(&quot;Error: &quot; + error)"
+                oldString="Log.e(TAG, &quot;Error: &quot; + error)"
+                replacement="Timber.e(&quot;Error: &quot; + error)"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/OfflineManagerUtils.java"
+            line="153"
+            column="17"
+            startOffset="6810"
+            endLine="153"
+            endColumn="46"
+            endOffset="6839"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).d(entry.getKey())"
+                oldString="Log.d(TAG, entry.getKey())"
+                replacement="Timber.tag(TAG).d(entry.getKey())"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.d(entry.getKey())"
+                oldString="Log.d(TAG, entry.getKey())"
+                replacement="Timber.d(entry.getKey())"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/OfflineManagerUtils.java"
+            line="281"
+            column="7"
+            startOffset="11945"
+            endLine="281"
+            endColumn="33"
+            endOffset="11971"/>
+    </incident>
+
+    <incident
+        id="LogNotTimber"
+        severity="warning"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with Timber.tag(TAG).d(entry.getValue().toString())"
+                oldString="Log.d(TAG, entry.getValue().toString())"
+                replacement="Timber.tag(TAG).d(entry.getValue().toString())"
+                shortenNames="true"
+                reformat="value"/>
+            <fix-replace
+                description="Replace with Timber.d(entry.getValue().toString())"
+                oldString="Log.d(TAG, entry.getValue().toString())"
+                replacement="Timber.d(entry.getValue().toString())"
+                shortenNames="true"
+                reformat="value"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*debug*sourceProvider*0*javaDir*0}/com/mapbox/mapboxgl/OfflineManagerUtils.java"
+            line="282"
+            column="7"
+            startOffset="11979"
+            endLine="282"
+            endColumn="46"
+            endOffset="12018"/>
+    </incident>
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of com.android.tools.build:gradle than 4.2.0 is available: 7.3.1. (There is also a newer version of 4.2.𝑥 available, if upgrading to 7.3.1 is difficult: 4.2.2)">
+        <fix-alternatives>
+            <fix-replace
+                description="Change to 7.3.1"
+                family="Update versions"
+                oldString="4.2.0"
+                replacement="7.3.1"/>
+            <fix-replace
+                description="Change to 4.2.2"
+                family="Update versions"
+                robot="true"
+                independent="true"
+                oldString="4.2.0"
+                replacement="4.2.2"/>
+        </fix-alternatives>
+        <location
+            file="${:mapbox_gl*projectDir}/build.gradle"
+            line="11"
+            column="9"
+            startOffset="159"
+            endLine="11"
+            endColumn="57"
+            endOffset="207"/>
+    </incident>
+
+</incidents>

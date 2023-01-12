@@ -23,7 +23,7 @@ class MapScreenControllerNotifier
   }
 }
 
-final mapScreenControllerProvider = StateNotifierProvider.autoDispose<
+final mapScreenControllerProvider = StateNotifierProvider<
     MapScreenControllerNotifier, AsyncValue<CurrentUserLocationEntity>>((ref) {
   return MapScreenControllerNotifier(ref);
 });

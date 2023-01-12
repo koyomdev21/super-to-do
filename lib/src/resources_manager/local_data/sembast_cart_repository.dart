@@ -47,8 +47,12 @@ class SembastDataRepository implements LocalDataRepository {
     final record = store.record(userKey);
     return record.onSnapshot(db).map((snapshot) {
       if (snapshot != null) {
+        print('from sembast watchuser');
+        print(snapshot.value);
         return UserResponse.fromJson(snapshot.value);
       } else {
+        print('from sembast watchuser');
+        print(snapshot?.value);
         return UserResponse('', '');
       }
     });

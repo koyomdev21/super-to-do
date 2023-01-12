@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "PROCESSED_RES",
+    "kind": "Directory"
+  },
+  "applicationId": "io.flutter.plugins.sharedpreferences.test",
+  "variantName": "profileUnitTest",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 0,
+      "versionName": "",
+      "outputFile": "resources-profileUnitTest.ap_"
+    }
+  ],
+  "elementType": "File"
+}

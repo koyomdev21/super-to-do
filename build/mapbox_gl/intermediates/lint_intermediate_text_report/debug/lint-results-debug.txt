@@ -1,0 +1,81 @@
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/build.gradle:11: Warning: A newer version of com.android.tools.build:gradle than 4.2.0 is available: 7.3.1. (There is also a newer version of 4.2.𝑥 available, if upgrading to 7.3.1 is difficult: 4.2.2) [AndroidGradlePluginVersion]
+        classpath 'com.android.tools.build:gradle:4.2.0'
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "AndroidGradlePluginVersion":
+   This detector looks for usage of the Android Gradle Plugin where the
+   version you are using is not the current stable release. Using older
+   versions is fine, and there are cases where you deliberately want to stick
+   with an older version. However, you may simply not be aware that a more
+   recent version is available, and that is what this lint check helps find.
+
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/GlobalMethodHandler.java:60: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+        Log.e(TAG, e.getMessage(), e);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/GlobalMethodHandler.java:65: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+        Log.e(TAG, e.getMessage(), e);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/MapBoxUtils.java:31: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+      Log.e(
+      ^
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/MapboxMapController.java:249: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+      Log.e(TAG, "setStyleString - string empty or null");
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/MapboxMapController.java:282: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+      Log.e(TAG, "missing location permissions");
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/MapboxMapController.java:624: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+            Log.d(TAG, exception.toString());
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/MapboxMapController.java:653: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+            Log.d(TAG, exception.toString());
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/MapboxMapController.java:1003: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+          Log.e(TAG, "location component: getLastLocation");
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/OfflineManagerUtils.java:96: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+                          Log.i(TAG, "Region " + "downloaded " + "successfully.");
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/OfflineManagerUtils.java:109: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+                          Log.i(TAG, "Region " + "download " + "progress = " + progress);
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/OfflineManagerUtils.java:116: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+                        Log.e(TAG, "onError reason: " + error.getReason());
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/OfflineManagerUtils.java:117: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+                        Log.e(TAG, "onError message: " + error.getMessage());
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/OfflineManagerUtils.java:127: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+                        Log.e(TAG, "Mapbox tile count" + " limit exceeded: " + limit);
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/OfflineManagerUtils.java:153: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+                Log.e(TAG, "Error: " + error);
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/OfflineManagerUtils.java:281: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+      Log.d(TAG, entry.getKey());
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/OfflineManagerUtils.java:282: Warning: Using 'Log' instead of 'Timber' [LogNotTimber from jetified-timber-4.7.1]
+      Log.d(TAG, entry.getValue().toString());
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "LogNotTimber":
+   Since Timber is included in the project, it is likely that calls to Log
+   should instead be going to Timber.
+
+   Identifier: jetified-timber-4.7.1
+
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/MapboxMapController.java:217: Warning: Custom view `MapView` has setOnTouchListener called on it but does not override performClick [ClickableViewAccessibility]
+      mapView.setOnTouchListener(
+      ^
+/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_gl-0.16.0/android/src/main/java/com/mapbox/mapboxgl/MapboxMapController.java:220: Warning: onTouch should call View#performClick when a click is detected [ClickableViewAccessibility]
+            public boolean onTouch(View v, MotionEvent event) {
+                           ~~~~~~~
+
+   Explanation for issues of type "ClickableViewAccessibility":
+   If a View that overrides onTouchEvent or uses an OnTouchListener does not
+   also implement performClick and call it when clicks are detected, the View
+   may not handle accessibility actions properly. Logic handling the click
+   actions should ideally be placed in View#performClick as some accessibility
+   services invoke performClick when a click action should occur.
+
+0 errors, 19 warnings

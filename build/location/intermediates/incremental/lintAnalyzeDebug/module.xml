@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/Users/qayyumcheri/Dev/flutter/.pub-cache/hosted/pub.dartlang.org/location-4.4.0/android"
+    name=":location"
+    type="LIBRARY"
+    maven="com.lyokone.location:location:"
+    gradle="7.1.2"
+    buildFolder="/Users/qayyumcheri/Dev/portfolio/super_to_do/build/location"
+    bootClassPath="/Users/qayyumcheri/Library/Android/sdk/platforms/android-31/android.jar:/Users/qayyumcheri/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-31"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

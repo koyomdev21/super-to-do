@@ -20,25 +20,9 @@
 		<data>
 		85sXfuI2wwpeTm3a688wijz5cJA=
 		</data>
-		<key>Modules/mapbox_gl.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		IfpnfhgBbWLVT2iWuO0AxpEx7xw=
-		</data>
 		<key>Modules/mapbox_gl.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
 		jTPZJNz5YEyqPlbS4KFwdPf6hD8=
-		</data>
-		<key>Modules/mapbox_gl.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
-		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
-		</data>
-		<key>Modules/mapbox_gl.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		V8pVb8SB7FBf/pIz50p15Dp22qI=
-		</data>
-		<key>Modules/mapbox_gl.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		UfVVsR2kkFLbK+gI4/vefFQtURY=
 		</data>
 		<key>Modules/mapbox_gl.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -80,39 +64,11 @@
 			CAnyV0CA6/onO/cJiWRtN8mvtIZRcaWxreIiGBYpFXk=
 			</data>
 		</dict>
-		<key>Modules/mapbox_gl.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			prXF2FcZFmcaoTdBktl8i+T9mQrRRfizqiOcIVC7QRg=
-			</data>
-		</dict>
 		<key>Modules/mapbox_gl.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			kwotf8XrKkz5sBGBEHiImrlx/4u1lNaXpVF4CStc73s=
-			</data>
-		</dict>
-		<key>Modules/mapbox_gl.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
-			</data>
-		</dict>
-		<key>Modules/mapbox_gl.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Midt940tI6m1MR2T4qIWRsDohxWK3Z7LzFWtlhVbRzc=
-			</data>
-		</dict>
-		<key>Modules/mapbox_gl.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			abIPSx7QdEEnK5ld32rgHC/qTaJxJq2we/y4w74MAfo=
 			</data>
 		</dict>
 		<key>Modules/mapbox_gl.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>

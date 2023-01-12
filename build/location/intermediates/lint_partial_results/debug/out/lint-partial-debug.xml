@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.2" type="partial_results">
+    <map id="UnusedResources">
+        <location id="R.drawable.navigation_empty_icon"
+            file="${:location*debug*sourceProvider*0*resDir*0}/drawable/navigation_empty_icon.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="9"
+            endColumn="9"
+            endOffset="275"/>
+        <entry
+            name="model"
+            string="drawable[navigation_empty_icon(D)];;;;"/>
+    </map>
+
+</incidents>

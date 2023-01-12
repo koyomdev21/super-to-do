@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.flutter.plugins.pathprovider.StorageDirectoryMapperTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-11T13:36:46" hostname="Qayyums-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="testAndroidType_valid" classname="io.flutter.plugins.pathprovider.StorageDirectoryMapperTest" time="0.003"/>
+  <testcase name="testAndroidType_null" classname="io.flutter.plugins.pathprovider.StorageDirectoryMapperTest" time="0.0"/>
+  <testcase name="testAndroidType_invalid" classname="io.flutter.plugins.pathprovider.StorageDirectoryMapperTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

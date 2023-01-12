@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/Users/qayyumcheri/Dev/portfolio/super_to_do/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.1.2"
+    buildFolder="/Users/qayyumcheri/Dev/portfolio/super_to_do/build/app"
+    bootClassPath="/Users/qayyumcheri/Library/Android/sdk/platforms/android-33/android.jar:/Users/qayyumcheri/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

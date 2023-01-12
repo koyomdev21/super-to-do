@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.1.2" type="incidents">
+
+    <incident
+        id="UnspecifiedImmutableFlag"
+        severity="warning"
+        message="Missing `PendingIntent` mutability flag">
+        <location
+            file="${:location*debug*sourceProvider*0*javaDir*0}/com/lyokone/location/FlutterLocationService.kt"
+            line="57"
+            column="59"
+            startOffset="2151"
+            endLine="57"
+            endColumn="60"
+            endOffset="2152"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Long.valueOf((int) call.argument(&quot;interval&quot;))` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Long.valueOf"/>
+        <location
+            file="${:location*debug*sourceProvider*0*javaDir*0}/com/lyokone/location/MethodCallHandlerImpl.java"
+            line="102"
+            column="53"
+            startOffset="3203"
+            endLine="102"
+            endColumn="94"
+            endOffset="3244"/>
+    </incident>
+
+    <incident
+        id="UseValueOf"
+        severity="warning"
+        message="Use `Float.valueOf((double) call.argument(&quot;distanceFilter&quot;))` instead">
+        <fix-replace
+            description="Replace with valueOf()"
+            family="Replace with valueOf()"
+            robot="true"
+            independent="true"
+            oldPattern="(new.+)\("
+            replacement="Float.valueOf"/>
+        <location
+            file="${:location*debug*sourceProvider*0*javaDir*0}/com/lyokone/location/MethodCallHandlerImpl.java"
+            line="104"
+            column="42"
+            startOffset="3378"
+            endLine="104"
+            endColumn="93"
+            endOffset="3429"/>
+    </incident>
+
+    <incident
+        id="GradleDynamicVersion"
+        severity="warning"
+        message="Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.google.android.gms:play-services-location:16.+)">
+        <fix-data coordinate="com.google.android.gms:play-services-location:16.+"/>
+        <location
+            file="${:location*projectDir}/build.gradle"
+            line="50"
+            column="9"
+            startOffset="1127"
+            endLine="50"
+            endColumn="61"
+            endOffset="1179"/>
+    </incident>
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of com.android.tools.build:gradle than 4.1.0 is available: 7.3.1. (There is also a newer version of 4.1.𝑥 available, if upgrading to 7.3.1 is difficult: 4.1.3)">
+        <fix-alternatives>
+            <fix-replace
+                description="Change to 7.3.1"
+                family="Update versions"
+                oldString="4.1.0"
+                replacement="7.3.1"/>
+            <fix-replace
+                description="Change to 4.1.3"
+                family="Update versions"
+                robot="true"
+                independent="true"
+                oldString="4.1.0"
+                replacement="4.1.3"/>
+        </fix-alternatives>
+        <location
+            file="${:location*projectDir}/build.gradle"
+            line="12"
+            column="9"
+            startOffset="194"
+            endLine="12"
+            endColumn="57"
+            endOffset="242"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.annotation:annotation than 1.0.0 is available: 1.5.0">
+        <fix-replace
+            description="Change to 1.5.0"
+            family="Update versions"
+            oldString="1.0.0"
+            replacement="1.5.0"/>
+        <location
+            file="${:location*projectDir}/build.gradle"
+            line="44"
+            column="17"
+            startOffset="872"
+            endLine="44"
+            endColumn="55"
+            endOffset="910"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of junit:junit than 4.12 is available: 4.13.2">
+        <fix-replace
+            description="Change to 4.13.2"
+            family="Update versions"
+            oldString="4.12"
+            replacement="4.13.2"/>
+        <location
+            file="${:location*projectDir}/build.gradle"
+            line="45"
+            column="24"
+            startOffset="934"
+            endLine="45"
+            endColumn="42"
+            endOffset="952"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test:core than 1.0.0 is available: 1.5.0">
+        <fix-replace
+            description="Change to 1.5.0"
+            family="Update versions"
+            oldString="1.0.0"
+            replacement="1.5.0"/>
+        <location
+            file="${:location*projectDir}/build.gradle"
+            line="47"
+            column="24"
+            startOffset="1034"
+            endLine="47"
+            endColumn="50"
+            endOffset="1060"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.3.2 is available: 1.9.0">
+        <fix-replace
+            description="Change to 1.9.0"
+            family="Update versions"
+            oldString="1.3.2"
+            replacement="1.9.0"/>
+        <location
+            file="${:location*projectDir}/build.gradle"
+            line="51"
+            column="20"
+            startOffset="1199"
+            endLine="51"
+            endColumn="50"
+            endOffset="1229"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of org.jetbrains.kotlin:kotlin-stdlib-jdk7 than 1.5.30 is available: 1.6.10">
+        <location
+            file="${:location*projectDir}/build.gradle"
+            line="52"
+            column="20"
+            startOffset="1249"
+            endLine="52"
+            endColumn="77"
+            endOffset="1306"/>
+    </incident>
+
+</incidents>
