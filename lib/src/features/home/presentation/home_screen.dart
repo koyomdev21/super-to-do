@@ -27,7 +27,10 @@ class HomeScreen extends ConsumerWidget {
               onPressed: () => context.goNamed(AppRoute.mapbox.name),
               icon: const Icon(Icons.add)),
           IconButton(
-              onPressed: () => ref.read(authRepositoryProvider).logout(),
+              onPressed: () async {
+                await ref.read(authRepositoryProvider).logout();
+                context.goNamed(AppRoute.signIn.name);
+              },
               icon: const Icon(Icons.logout)),
         ],
       ),

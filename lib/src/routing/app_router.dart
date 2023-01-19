@@ -9,7 +9,6 @@ import '../features/authentication/presentation/email_password_sign_in_screen.da
 import '../features/home/presentation/home_screen.dart';
 import '../features/location/presentation/map_screen.dart';
 import '../resources_manager/local_data/app_preferences.dart';
-import 'go_router_refresh_stream.dart';
 import 'not_found_screen.dart';
 
 enum AppRoute {
@@ -27,24 +26,6 @@ final goRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
     initialLocation: '/',
     debugLogDiagnostics: true,
-    redirect: (context, state) async {
-      final isSplashScreenViewed =
-          await sharedPreferences.isSplashScreenViewed();
-      final isLoggedIn = await sharedPreferences.isLoggedIn();
-      if (isSplashScreenViewed) {
-        if (isLoggedIn) {
-          if (state.location == '/signIn' || state.location == '/') {
-            return '/home';
-          }
-        } else {
-          if (state.location == '/' || state.location == '/home') {
-            return '/signIn';
-          }
-        }
-      }
-      return null;
-    },
-    refreshListenable: GoRouterRefreshStream([localDataRepository.watchUser()]),
     routes: [
       GoRoute(
         path: '/',

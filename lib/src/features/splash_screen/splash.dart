@@ -3,10 +3,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:super_to_do/src/resources_manager/local_data/app_preferences.dart';
+import 'package:super_to_do/src/routing/app_router.dart';
 
 import '../../resources_manager/assets_manager.dart';
-import '../../resources_manager/local_data/app_preferences.dart';
-import '../../routing/app_router.dart';
 
 class SplashScreen extends ConsumerStatefulWidget {
   const SplashScreen({super.key});
@@ -16,29 +16,51 @@ class SplashScreen extends ConsumerStatefulWidget {
 }
 
 class _SplashScreenState extends ConsumerState<SplashScreen> {
-  late Timer timer;
+  late Timer _timer;
 
-  _startDelay(BuildContext context) {
-    timer = Timer(
-        const Duration(seconds: 1),
-        () => myAsyncMethod(context, (() {
-              if (!mounted) return;
-              context.goNamed(AppRoute.home.name);
-            })));
+  _startDelay() {
+    _timer = Timer(const Duration(seconds: 2), _goNext);
   }
 
-  Future<void> myAsyncMethod(BuildContext context, Function() onSuccess) async {
-    await Future.delayed(const Duration(seconds: 0));
-    final sharedPreferences = ref.watch(appPreferencesProvider);
-    await sharedPreferences.setSplashScreenViewed();
-    onSuccess();
+  _goNext() async {
+    final isLoggedIn = await ref.watch(appPreferencesProvider).isLoggedIn();
+
+    if (isLoggedIn) {
+      // navigate to home screen
+      context.goNamed(AppRoute.home.name);
+    } else {
+      context.goNamed(AppRoute.signIn.name);
+    }
   }
+
+  // _startDelay(BuildContext context) {
+  //   timer = Timer(
+  //     const Duration(seconds: 1),
+  //     () => myAsyncMethod(
+  //       context,
+  //       (() {
+  //         if (!mounted) return;
+  //         context.goNamed(AppRoute.home.name);
+  //       }),
+  //     ),
+  //   );
+  // }
+
+  // Future<void> myAsyncMethod(BuildContext context, Function() onSuccess) async {
+  //   await Future.delayed(const Duration(seconds: 0));
+  //   if (mounted) {
+  //     final sharedPreferences = ref.watch(appPreferencesProvider);
+  //     await sharedPreferences.setSplashScreenViewed();
+  //   }
+  //   onSuccess();
+  // }
 
   @override
   void initState() {
-    Future.delayed(Duration.zero, () {
-      _startDelay(context);
-    });
+    // Future.delayed(Duration.zero, () {
+    //   if (mounted) _startDelay(context);
+    // });
+    _startDelay();
     super.initState();
   }
 
