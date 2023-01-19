@@ -32,6 +32,7 @@ migrate_working_dir/
 /assets/.env
 .pub/
 /build/
+.github
 
 # Symbolication related
 app.*.symbols
