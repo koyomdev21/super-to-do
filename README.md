@@ -19,6 +19,7 @@ For the meantime, apps crash happened for android when closing map as per flutte
 
 Changes to be implement in the near future:
 
-real working use cases backend
-UI update
-application with real features
+- real working use cases backend
+- UI update
+- application with real features
+- more mapbox features such as search autocomplete
