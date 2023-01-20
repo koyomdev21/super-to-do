@@ -8,13 +8,14 @@ This project is mainly focusing on the implementation of riverpod state manageme
 
 Packages used in this project:
 
-flutter riverpod: to handle the state of the apps and caching strategy.
-go router: to handle the navigation.
-retrofit and dio: to handle the entire REST api calling.
-mocktail: mocking and testing.
-mapbox: implementing map for the application.
-sembast: for data persistence.
-For the meantime, apps crash happened for android when closing map as per flutter/flutter#106464. IOS working as intended.
+- flutter riverpod: to handle the state of the apps and caching strategy.
+- go router: to handle the navigation.
+- retrofit and dio: to handle the entire REST api calling.
+- mocktail: mocking and testing.
+- mapbox: implementing map for the application.
+- sembast: for data persistence.
+
+For the meantime, apps crash happened for android when closing map as per flutter/flutter#106464. Can downgrade to Flutter version 2 for android. IOS working as intended.
 
 Changes to be implement in the near future:
 
