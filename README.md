@@ -4,7 +4,7 @@ TDD with repository pattern architecture.
 
 ## Getting Started
 
-This project is mainly focusing on the implementation of riverpod state management package with the most basic UI. Thus, the API used is just a stubbed with MockLab. Register features is not implemented. To login, always use 'abc@gmail.com' as email, 'password' as password as they are stubbed API. There will be major UI update with animation in the near future.
+This project is mainly focusing on the implementation of riverpod state management package with the most basic UI. Thus, the API used is just a stubbed with MockLab. Register features is not implemented. To login, always use 'abc@gmail.com' as email, 'password' as password as they are stubbed API. Also get your Mapbox API key to enable the mapbox feature. There will be major UI update with animation in the near future.
 
 Packages used in this project:
 
