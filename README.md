@@ -1,5 +1,3 @@
-# super_to_do
-
 TDD with repository pattern architecture.
 
 ## Getting Started

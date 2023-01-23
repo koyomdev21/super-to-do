@@ -5,18 +5,15 @@ import 'package:super_to_do/src/resources_manager/local_data/app_preferences.dar
 import 'package:super_to_do/src/resources_manager/local_data/local_data_repository.dart';
 
 import '../../../exceptions/app_exception.dart';
-import '../../../utils/in_memory_store.dart';
 import '../domain/authentication_response.dart';
 
 class AuthRepository {
   AuthRepository(this.ref);
   final Ref ref;
-  final _authState = InMemoryStore<bool?>(null);
-  Stream<bool?> authStateChanges() => _authState.stream;
-  bool? get currentUser => _authState.value ?? false;
 
   Future<void> signInWithEmailAndPassword(String email, String password) async {
     final authDataSource = ref.watch(authDataSourceProvider);
+    ref.read(localDataRepositoryProvider).watchUser();
     final result =
         await AsyncValue.guard(() => authDataSource.login(email, password));
     if (!result.hasError) {

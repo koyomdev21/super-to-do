@@ -1,3 +1,4 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:location/location.dart';
 import 'package:location_repository/src/model/current_location.dart';
 
@@ -66,3 +67,7 @@ class LocationRepository {
     );
   }
 }
+
+final locationRepositoryProvider = Provider<LocationRepository>((ref) {
+  return LocationRepository();
+});
