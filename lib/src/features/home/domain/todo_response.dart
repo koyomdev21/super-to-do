@@ -5,11 +5,13 @@ import 'package:super_to_do/src/features/authentication/domain/authentication_re
 class ToDo extends BaseResponse {
   int? id;
   String? title;
+  String? name;
   String? image;
   bool? completed;
   ToDo({
     this.id,
     this.title,
+    this.name,
     this.image,
     this.completed,
   });
@@ -18,6 +20,7 @@ class ToDo extends BaseResponse {
     return {
       'id': id,
       'title': title,
+      'name': name,
       'image': image,
       'completed': completed,
     };
@@ -27,6 +30,7 @@ class ToDo extends BaseResponse {
     return ToDo(
       id: map['id']?.toInt(),
       title: map['title'],
+      name: map['name'],
       image: map['image'],
       completed: map['completed'],
     );

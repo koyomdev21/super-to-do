@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:location_repository/location_repository.dart';
 
 import '../common_widgets/alert_dialogs.dart';
 import '../exceptions/app_exception.dart';
@@ -19,6 +20,8 @@ extension AsyncValueUI on AsyncValue {
   String _errorMessage(Object? error) {
     if (error is AppException) {
       return error.details.message;
+    } else if (error is CurrentLocationFailure) {
+      return error.error;
     } else {
       return error.toString();
     }

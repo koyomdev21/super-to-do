@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:super_to_do/src/features/authentication/presentation/email_password_sign_in_form_type.dart';
+import 'package:super_to_do/src/features/location/presentation/map_screen_base.dart';
 import 'package:super_to_do/src/features/splash_screen/splash.dart';
 import 'package:super_to_do/src/resources_manager/local_data/local_data_repository.dart';
 
@@ -49,7 +50,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
         pageBuilder: (context, state) => MaterialPage(
           key: state.pageKey,
           fullscreenDialog: true,
-          child: MapScreen(),
+          child: const MapScreenBase(),
         ),
       ),
       GoRoute(

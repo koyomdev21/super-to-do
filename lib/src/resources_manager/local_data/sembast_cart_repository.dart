@@ -49,7 +49,7 @@ class SembastDataRepository implements LocalDataRepository {
       if (snapshot != null) {
         print('from sembast watchuser');
         print(snapshot.value);
-        return UserResponse.fromJson(snapshot.value);
+        return UserResponse.fromJson(snapshot.value as String);
       } else {
         print('from sembast watchuser');
         print(snapshot?.value);
