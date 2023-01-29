@@ -7,8 +7,7 @@ import 'package:super_to_do/src/features/splash_screen/splash.dart';
 import 'package:super_to_do/src/resources_manager/local_data/local_data_repository.dart';
 
 import '../features/authentication/presentation/email_password_sign_in_screen.dart';
-import '../features/home/presentation/home_screen.dart';
-import '../features/location/presentation/map_screen.dart';
+import '../features/home/presentation/home_screen_base.dart';
 import '../resources_manager/local_data/app_preferences.dart';
 import 'not_found_screen.dart';
 
