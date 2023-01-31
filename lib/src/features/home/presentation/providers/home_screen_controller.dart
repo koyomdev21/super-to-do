@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:super_to_do/src/features/home/domain/todo_response.dart';
 
-import '../data/todo_repository.dart';
+import '../../data/todo_repository.dart';
 
 class HomeScreenControllerNotifier
     extends StateNotifier<AsyncValue<ToDoResponse>> {

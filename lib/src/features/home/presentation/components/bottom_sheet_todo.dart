@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:super_to_do/src/common_widgets/custom_checkbox_list_tile.dart';
 
-import '../../../constants/app_sizes.dart';
-import '../domain/todo_response.dart';
+import '../../../../constants/app_sizes.dart';
+import '../../domain/todo_response.dart';
 
 class BottomSheetToDo extends StatelessWidget {
   const BottomSheetToDo({

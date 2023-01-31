@@ -5,7 +5,6 @@ import 'package:super_to_do/src/features/authentication/data/auth_data_source.da
 import 'package:super_to_do/src/features/authentication/data/auth_repository.dart';
 import 'package:super_to_do/src/features/authentication/domain/authentication_response.dart';
 import 'package:super_to_do/src/resources_manager/local_data/app_preferences.dart';
-import 'package:super_to_do/src/resources_manager/local_data/local_data_repository.dart';
 
 import '../../../../mocks.dart';
 
@@ -17,12 +16,10 @@ void main() {
   final tUserNull = UserResponse('', '');
   final tUserResponse = UserResponse('qayyum', '0132470473');
 
-  late MockLocalDataRepository localDataRepository;
   late MockAuthDataSource authDataSource;
   late MockAppPreferences appPreferences;
   setUp(() {
     authDataSource = MockAuthDataSource();
-    localDataRepository = MockLocalDataRepository();
     appPreferences = MockAppPreferences();
   });
 
@@ -30,7 +27,6 @@ void main() {
     final container = ProviderContainer(
       overrides: [
         authDataSourceProvider.overrideWithValue(authDataSource),
-        localDataRepositoryProvider.overrideWithValue(localDataRepository),
         appPreferencesProvider.overrideWithValue(appPreferences),
       ],
     );
@@ -39,34 +35,43 @@ void main() {
   }
 
   group('auth repository', () {
-    test('no user logged in and watchUser is null', () async {
+    test('no user logged in and isLoggedIn is false', () async {
       //setup
-      when(localDataRepository.watchUser)
-          .thenAnswer((_) => Stream.value(tUserNull));
-
+      when(appPreferences.isLoggedIn).thenAnswer(
+        (_) => Future.value(false),
+      );
       // run
-      localDataRepository.watchUser();
-
       // expect
-      expectLater(localDataRepository.watchUser(), emits(tUserNull));
+      expect(appPreferences.isLoggedIn(), completion(false));
     });
 
     test('sign in and return dummy AuthenticationResponse', () async {
       // setup
       when(() => authDataSource.login(tEmail, tPassword))
           .thenAnswer((_) => Future.value(AuthenticationResponse(tUser)));
-      when(() => localDataRepository.setUser(tUserResponse))
-          .thenAnswer((_) => Future.value());
       when(appPreferences.setLoggedIn).thenAnswer((_) => Future.value());
-      when(localDataRepository.watchUser)
-          .thenAnswer((_) => Stream.value(tUser));
       final authRepository = makeAuthRepository();
       // run
       await authRepository.signInWithEmailAndPassword(tEmail, tPassword);
       // verify
       verify(() => authDataSource.login(tEmail, tPassword)).called(1);
       verify(() => appPreferences.setLoggedIn()).called(1);
-      expect(localDataRepository.watchUser(), emits(tUser));
+    });
+
+    test('logout then isLoggedIn is false', () async {
+      //setup
+      when(appPreferences.logout).thenAnswer(
+        (_) => Future.value(),
+      );
+      when(appPreferences.isLoggedIn).thenAnswer(
+        (_) => Future.value(false),
+      );
+      final authRepository = makeAuthRepository();
+      // run
+      await authRepository.logout();
+      // verify
+      verify(() => appPreferences.logout()).called(1);
+      expect(appPreferences.isLoggedIn(), completion(false));
     });
   });
 }
