@@ -31,7 +31,6 @@ class MapBoxMapComponent extends ConsumerWidget {
         ref.read(mapBoxControllerProvider.notifier).mapOnClick(latlng);
       },
       onMapCreated: (controller) async {
-        print('controller assignet on created');
         ref.read(currentMapControllerProvider.notifier).state = controller;
       },
     );
